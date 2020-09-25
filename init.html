@@ -191,8 +191,8 @@
     		<div class="box2 clear">
     			<span>审批状态</span>
     			<ul>
-    				<li class="clear"><span id="one"></span>潘恩楦 - 发起申请<div class="right">10-01 08:00</div></li>
-    				<li><span id="two"></span>一级：[辅导员]许落汀 - 审批<div id="tg">通过</div><div class="right">10-01 08:30</div></li>
+    				<li class="clear"><span id="one"></span>潘恩楦 - 发起申请<div class="right"></span><p id="startSh"></p></div></li>
+    				<li><span id="two"></span>一级：[辅导员]许落汀 - 审批<div id="tg">通过</div><div class="right"></span><p id="endSh"></p></div></li>
     			</ul>
     			<input class="text" type="text" name="suggest" value="审批意见：无" readonly="readonly" />
     	</div>
@@ -223,6 +223,8 @@
 			}
 			document.getElementById("start").innerHTML=mon+'-'+day+' '+hourStart+':00';
 			document.getElementById("end").innerHTML=mon+'-'+day+' '+hourEnd+':30';
+			document.getElementById("startSh").innerHTML=mon+'-'+(day-1)+' '+8+':00';
+			document.getElementById("endSh").innerHTML=mon+'-'+(day-1)+' '+hourStart+':00';
 			</script> 
 	<noscript>抱歉，你的浏览器不支持 JavaScript!</noscript>
     </body>
